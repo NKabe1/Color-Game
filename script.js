@@ -59,7 +59,7 @@ function setColorsToBoxesHard(colorsListHard) {
 }
 
 function startGame() {
-    resultButton.textContent = "Waiting for your answer";
+    resultButton.textContent = "Choose a box";
 }
 
 function resetGame() {

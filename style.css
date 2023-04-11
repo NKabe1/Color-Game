@@ -5,6 +5,10 @@ body {
     color: white;
 }
 
+.title {
+    margin-top: 50px;
+}
+
 .box {
     width: 100px;
     height: 100px;
@@ -28,6 +32,6 @@ h1 p:last-child {
 }
 
 .btn {
-    margin: 0px 25px;
-    padding: 0 40px;
+    margin: 0px 15px;
+    padding: 0 20px;
 }

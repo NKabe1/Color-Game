@@ -60,6 +60,8 @@ function setColorsToBoxesHard(colorsListHard) {
 
 function startGame() {
     resultButton.textContent = "Choose a box";
+    resultButton.style.backgroundColor = "rgb(255, 199, 32)";
+    resultButton.style.borderColor = "rgb(255, 199, 32)";
 }
 
 function resetGame() {
@@ -68,6 +70,8 @@ function resetGame() {
     });
     winnerColor.textContent = "......";
     resultButton.textContent = "......";
+    resultButton.style.backgroundColor = "rgb(255, 199, 32)";
+    resultButton.style.borderColor = "rgb(255, 199, 32)";
     luckyColor = null;
     colorsCollection = null;
     isGameFinished = false;
@@ -125,9 +129,13 @@ allBoxes.forEach((box) => {
     box.addEventListener("click", (event) => {
         if (!isGameFinished) {
             if (event.target.style.backgroundColor === luckyColor) {
-                resultButton.textContent = "Won";
+                resultButton.textContent = "Won 🏆";
+                resultButton.style.backgroundColor = "rgb(104, 185, 132)";
+                resultButton.style.borderColor = "rgb(104, 185, 132)";
             } else { 
-                resultButton.textContent = "Lost"; 
+                resultButton.textContent = "Lost 💣";
+                resultButton.style.backgroundColor = "rgb(210, 19, 18)";
+                resultButton.style.borderColor = "rgb(210, 19, 18)";
             }
         }
         isGameFinished = true;
